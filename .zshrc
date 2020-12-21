@@ -5,7 +5,7 @@ export NVM_DIR="$HOME/.nvm"
 export GVM_DIR="$HOME/.gvm"
 
 autoload -U compinit
-compinit
+compinit -d ~/.config/zsh
 
 setopt COMPLETE_IN_WORD
 setopt NOBGNICE
