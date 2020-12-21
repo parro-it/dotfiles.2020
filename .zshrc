@@ -8,7 +8,6 @@ autoload -U compinit
 compinit
 
 setopt COMPLETE_IN_WORD
-
 setopt NOBGNICE
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
@@ -18,7 +17,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
 
 alias gs="git status"
 alias gc="git commit -am"

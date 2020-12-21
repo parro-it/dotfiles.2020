@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[user]
+	name = Andrea Parodi
+	email = andrea@parro.it
+[push]
+	default = simple
