@@ -1,1 +1,3 @@
+#!/bin/zsh
+
 ln -s ~/repos/dotfiles.2020/authorized_keys ~/.ssh

@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ssh edanovar@login.galileo.cineca.it -i ~/.ssh/id_rsa.galileo.2020

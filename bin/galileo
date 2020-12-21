@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ssh aparodi1@login.galileo.cineca.it -i ~/.ssh/andrea.parodi $@

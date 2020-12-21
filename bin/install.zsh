@@ -72,3 +72,10 @@ zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binsc
 
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
+
+echo "Installing joe..."
+cd ~/bin 
+curl -fLo joe https://github.com/karan/joe/releases/download/1.0.3/joe
+chmod +x joe
+joe u
+cd ~
