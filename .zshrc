@@ -34,10 +34,9 @@ alias ni='npm install -S'
 alias nid='npm install -D'
 
 [[ -s "$GVM_DIR/scripts/gvm" ]] && source "$GVM_DIR/scripts/gvm"
-[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" 
+[[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  
 
 export EDITOR='micro'
 
 
-[[ -s "/galileo/home/userexternal/aparodi1/.gvm/scripts/gvm" ]] && source "/galileo/home/userexternal/aparodi1/.gvm/scripts/gvm"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

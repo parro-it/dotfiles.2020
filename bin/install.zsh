@@ -51,6 +51,11 @@ echo "Installing micro..."
 cd ~/bin
 curl https://getmic.ro | zsh
 mkdir -p ~/.config/micro
+
+
+ln -s $DOTFILES/bin/* ~/bin
+
+
 cd ~/.config/micro
 ln -fs $DOTFILES/config/micro/* .
 
