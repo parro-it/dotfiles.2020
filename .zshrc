@@ -13,10 +13,11 @@ setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="avit"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
 
 alias gs="git status"
 alias gc="git commit -am"
@@ -32,6 +33,20 @@ alias nt='npm test'
 alias ns='npm start'
 alias ni='npm install -S'
 alias nid='npm install -D'
+
+function tunnels {
+    ssh -Xi ~/.ssh/andrea.parodi andrea.parodi@130.251.104.213 -vN -L 2200:localhost:22 -L 2201:dumbo:22 -L 2202:timoteo:22 -L 2203:jimcorvo:22
+}
+
+export remote=andrea.parodi@localhost
+alias drihm='ssh -p 2200 $remote'
+alias dumbo='ssh -p 2201 $remote'
+alias timoteo='ssh -p 2202 $remote'
+alias jimcorvo='ssh -p 2203 $remote'
+alias cp-drihm='scp -P 2200'
+alias cp-dumbo='scp -P 2201'
+alias cp-timoteo='scp -P 2202'
+alias cp-jimcorvo='scp -P 2203'
 
 [[ -s "$GVM_DIR/scripts/gvm" ]] && source "$GVM_DIR/scripts/gvm"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" 
