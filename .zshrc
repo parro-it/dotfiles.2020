@@ -40,3 +40,5 @@ alias nid='npm install -D'
 export EDITOR='micro'
 
 
+
+[[ -s "/home/parroit/.gvm/scripts/gvm" ]] && source "/home/parroit/.gvm/scripts/gvm"

@@ -1,2 +1,4 @@
+#!/bin/zsh
+
 gvm use go1.15.6 --default
 gvm install go1.15.6 -B
