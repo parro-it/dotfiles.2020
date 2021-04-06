@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-ssh -i ~/.ssh/it4i aparodi@salomon.it4i.cz

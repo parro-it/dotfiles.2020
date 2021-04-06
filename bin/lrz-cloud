@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-ssh -i ~/.ssh/andrea.parodi debian@138.246.233.77

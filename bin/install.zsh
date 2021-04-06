@@ -51,11 +51,6 @@ echo "Installing micro..."
 cd ~/bin
 curl https://getmic.ro | zsh
 mkdir -p ~/.config/micro
-
-
-ln -s $DOTFILES/bin/* ~/bin
-
-
 cd ~/.config/micro
 ln -fs $DOTFILES/config/micro/* .
 
@@ -79,3 +74,7 @@ curl -fLo joe https://github.com/karan/joe/releases/download/1.0.3/joe
 chmod +x joe
 joe u
 cd ~
+
+ln -s $DOTFILES/bin/* ~/bin
+mkdir -p ~/.ssh
+ln -s $DOTFILES/config/ssh/config ~/.ssh
