@@ -53,7 +53,4 @@ alias cp-jimcorvo='scp -P 2203'
 [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  
 
 export EDITOR='micro'
-
-
-
-[[ -s "/home/parroit/.gvm/scripts/gvm" ]] && source "/home/parroit/.gvm/scripts/gvm"
+export SSH_AUTH_SOCK=/tmp/sshagent.pid

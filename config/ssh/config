@@ -1,0 +1,71 @@
+Host *
+    ServerAliveInterval 300
+    ServerAliveCountMax 2
+
+Host jimcorvo
+    HostName jimcorvo
+    ProxyCommand ssh -W %h:%p -i ~/.ssh/andrea.parodi andrea.parodi@130.251.104.213 
+    ForwardX11 yes
+    User andrea.parodi
+    IdentityFile ~/.ssh/andrea.parodi
+
+Host timoteo
+    HostName timoteo
+    ProxyCommand ssh -W %h:%p -i ~/.ssh/andrea.parodi andrea.parodi@130.251.104.213 
+    ForwardX11 yes
+    User andrea.parodi
+    IdentityFile ~/.ssh/andrea.parodi
+
+Host dumbo
+    HostName timoteo
+    ProxyCommand ssh -W %h:%p -i ~/.ssh/andrea.parodi andrea.parodi@130.251.104.213 
+    ForwardX11 yes
+    User andrea.parodi
+    IdentityFile ~/.ssh/andrea.parodi
+
+Host drihm
+    HostName 130.251.104.213
+    ForwardX11 yes
+    User andrea.parodi
+    IdentityFile ~/.ssh/andrea.parodi
+
+Host fakehost
+    HostName localhost
+    IdentityFile /var/fixtures/private-key
+    User andrea.parodi
+    Port 2222
+
+Host galileo
+    HostName login.galileo.cineca.it
+    User aparodi1
+    IdentityFile ~/.ssh/andrea.parodi
+
+Host galileo-edanovaro
+    HostName login.galileo.cineca.it
+    User edanovar
+    IdentityFile ~/.ssh/id_rsa.galileo.2020
+
+Host lrz
+    HostName lxlogin2.lrz.de
+    IdentityFile ~/.ssh/lrz-linux
+    ForwardX11 yes
+    User di82xog
+
+
+Host lrz-cloud
+    HostName 138.246.233.77
+    IdentityFile ~/.ssh/andrea.parodi
+    ForwardX11 yes
+    User debian
+
+Host salomon
+    HostName salomon.it4i.cz
+    IdentityFile /home/parroit/.ssh/it4i
+    ForwardX11 yes
+    User aparodi
+
+Host barbora
+    HostName barbora.it4i.cz
+    IdentityFile /home/parroit/.ssh/it4i
+    ForwardX11 yes
+    User aparodi
